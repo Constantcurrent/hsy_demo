@@ -10,5 +10,5 @@ int main(int argc,char **argv){
     ros::init(argc,argv,"listener");
     ros::NodeHandle n;
     ros::Subscriber sub=n.subscribe("filePub",1000,chatterCallback);
-    ros::spin();//第一次操作
+    ros::spin();//第一次操作,second operation
 }
